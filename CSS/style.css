@@ -1,0 +1,18 @@
+body {
+    background-image: url(../Images/down.png), url(../Images/up.png);
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: left top, right top;
+    background-color: grey;
+}
+
+.centerText {
+    text-align: center;
+}
+
+.bcenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Guessing Game</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="CSS/style.css">
+        <script type="text/javascript" src="JavaScript/script.js"></script>
+
+    </head>
+    
+    <body onLoad="listen()">
+
+        <div class="centerText">
+            <h1 class="display-1">The Guessing Game</h1>
+
+            <h4 class="display-4">Click start below to begin.</h4>
+        </div>
+        <br>
+
+        <div class="centerText">
+            <h5 class="display-5" id="guessDisplay">Guesses Remaining: 5</h5>
+        </div>
+
+        <div class="centerText">
+            <h5 id="instruct" class="display-5">Guess a number below and then press the button.</h5>
+        </div>
+        
+        <div class="centerText">
+            <input type='number' placeholder='1-100' id='guess'>
+        </div>
+
+        <div class="bcenter">
+            <p id="victory"><button onClick='guess()' id="myBtn">Enter</button></p>
+        </div>
+
+        <div class="centerText">
+            <p id="arrowImage"></p>
+        </div>
+
+        <div class="centerText">
+            <h5 class="display-5" id="UpOrDown"></h5>
+        </div>
+        
+    </body>
+</html>
