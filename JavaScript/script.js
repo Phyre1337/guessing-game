@@ -55,7 +55,7 @@ function guess() //Declaring the main variable where the user tries to play the 
         else if (userGuess > randomChoice) //If the user's guess is higher than the number selected by the program,
         {                                  //it tells them to go lower.
             document.getElementById("arrowImage").innerHTML = "<img src='Images/down.png'>";
-            document.getElementById("UpOrDown").innerHTML = "Your number is too high, maybe trying guessing lower.";
+            document.getElementById("UpOrDown").innerHTML = "Your number is too high, maybe try guessing lower. :(";
             guesses--; //Subtracts a guess from the user.
             document.getElementById("guessDisplay").innerHTML = `Guesses Remaining : ${guesses}`; //Displays the remaining number of guesses.
         }
