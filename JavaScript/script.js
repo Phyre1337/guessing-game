@@ -69,7 +69,7 @@ function guess() //Declaring the main variable where the user tries to play the 
     }
     if (guesses == 0)  //If the user's guesses remaining hits zero, they lose and are forced to restart, 
     {                  //with a button calling the init function.
-        document.getElementById("guessDisplay").innerHTML = "You lost..."; //Displays losing message and gives button to reset.
+        document.getElementById("guessDisplay").innerHTML = `You lost... the number was ${randomChoice}.`; //Displays losing message and gives button to reset.
         document.getElementById("instruct").innerHTML = "Click the reset button below to play again.";
         document.getElementById("victory").innerHTML = "<button id='myBtn' onClick='init()'>Reset</button>";
         document.getElementById("guess").value = ""; //Resets value of input box to nothing.
